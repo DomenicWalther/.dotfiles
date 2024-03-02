@@ -14,13 +14,19 @@ return require('packer').startup(function(use)
     }
 
     use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
+        "neanias/everforest-nvim",
+        as = "everforest",
         config = function()
-            vim.cmd('colorscheme rose-pine')
+            vim.cmd("colorscheme everforest")
         end
     })
-
+    use({
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
     use({
         "folke/trouble.nvim",
         config = function()
@@ -51,6 +57,7 @@ return require('packer').startup(function(use)
             })
         end
     })
+
     use {
         "ggandor/leap.nvim",
         config = function() require("leap").set_default_keymaps() end

@@ -12,12 +12,20 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-
+    use('numToStr/prettierrc.nvim')
     use({
         "neanias/everforest-nvim",
         as = "everforest",
+    })
+    use({
+        "shaunsingh/nord.nvim",
+        as = "nord",
+    })
+    use({
+        "rebelot/kanagawa.nvim",
+        as = "kanagawa",
         config = function()
-            vim.cmd("colorscheme everforest")
+            vim.cmd("colorscheme kanagawa-wave")
         end
     })
     use({

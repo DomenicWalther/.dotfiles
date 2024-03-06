@@ -28,6 +28,9 @@ return require('packer').startup(function(use)
             vim.cmd("colorscheme kanagawa-wave")
         end
     })
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua' -- recommended if need floating window support
+    use 'neovim/nvim-lspconfig'
     use({
         "kdheepak/lazygit.nvim",
         -- optional for floating window border decoration

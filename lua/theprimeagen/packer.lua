@@ -79,6 +79,10 @@ return require('packer').startup(function(use)
     use("mbbill/undotree")
     use("tpope/vim-fugitive")
     use("nvim-treesitter/nvim-treesitter-context");
+    use {
+        "nvim-telescope/telescope-file-browser.nvim",
+        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }
 
     use {
         'VonHeikemen/lsp-zero.nvim',

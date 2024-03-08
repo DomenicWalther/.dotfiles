@@ -77,8 +77,14 @@ require 'go'.setup({
     -- lsp_diag_hdlr = false,
     lsp_codelens = false,
     lsp_inlay_hints = {
-        enable = false,
+        enable = true,
         -- only_current_line = true,
+    },
+    floaterm = {
+        position = 'auto',
+        width = 0.45,
+        height = 0.98,
+        title_colors = 'nord',
     },
 })
 
@@ -141,4 +147,3 @@ cmd('iab rene require.NotEmpty(t,')
 cmd('iab ret require.True(t,')
 cmd('iab rel require.Len(t,')
 cmd('iab testt func TestX(t *testing.T) {<CR>')
-

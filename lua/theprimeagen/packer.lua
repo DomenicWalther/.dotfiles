@@ -21,12 +21,14 @@ return require('packer').startup(function(use)
         "shaunsingh/nord.nvim",
         as = "nord",
     })
+
+    use { "catppuccin/nvim", as = "catppuccin",
+        config = function()
+            vim.cmd("colorscheme catppuccin-mocha")
+        end }
     use({
         "rebelot/kanagawa.nvim",
         as = "kanagawa",
-        config = function()
-            vim.cmd("colorscheme kanagawa-wave")
-        end
     })
     use 'ray-x/go.nvim'
     use 'ray-x/guihua.lua' -- recommended if need floating window support

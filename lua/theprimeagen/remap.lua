@@ -46,9 +46,6 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>")
 
 vim.keymap.set("n", "<leader>gt", "<cmd>GoTest<CR>")
+vim.keymap.set("n", "<leader>gf", "<cmd>GoTestFile<CR>")
 vim.keymap.set("n", "<leader>gj", "<cmd>GoAlt!<CR>")
-
-
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+vim.keymap.set("n", "<leader><leader>l", "<cmd>GoLint<CR>")

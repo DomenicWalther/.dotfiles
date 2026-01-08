@@ -1,0 +1,71 @@
+{
+  "biome.suggestInstallingGlobally": false,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+    "scss": "css"
+  },
+  "tailwindCSS.suggestions": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "vscode_custom_css.imports": [
+    "file:///c%3A/Users/Domenic/.vscode/extensions/30d98f9b2.neovide-cursor-1.0.1/neovide-cursor.js"
+  ],
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.enablePreview": false,
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"],
+      "silent": true
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "h"],
+      "commands": [":nohl"]
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-a>": false,
+    "<C-s>": false,
+    "<C-w>": false,
+    "<C-p>": false,
+    "<C-b>": false,
+
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "workbench.colorTheme": "Horizon",
+  "explorer.confirmDelete": false
+}

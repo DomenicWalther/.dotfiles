@@ -1,0 +1,45 @@
+" Leader key
+let mapleader = " "
+set easymotion
+
+
+" Use system clipboard
+set clipboard=unnamedplus
+Plug 'tpope/vim-surround'
+" Highlightsymotion-prefix) search
+set hlsearch
+
+" Normal mode key mappings
+map <leader>h :nohlsearch<CR>
+map <leader>q :action CloseEditor<CR>
+map <leader>w :w<CR>
+map <leader>; A;<Esc>
+map <leader>, A,<Esc>
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <Plug>(easymotion-f)
+
+nnoremap <leader>sa :action Generate<CR>
+nnoremap <leader>sc :action GenerateConstructor<cr>
+nnoremap <leader>sg :action GenerateGetterAndSetter<cr>
+nnoremap <leader>se :action GenerateEquals<cr>
+nnoremap <leader>so :action OverrideMethods<CR>
+
+" Refactoring (leader r)
+map <leader>re :action Refactorings.QuickListPopupAction<CR>
+map <leader>rn :action RenameElement<cr>
+map <leader>rv :action IntroduceVariable<cr>
+map <leader>rc :action IntroduceConstant<cr>
+map <leader>rf :action IntroduceField<cr>
+map <leader>rp :action IntroduceParameter<cr>
+map <leader>rx :action ExtractMethod<cr>
+map <leader>rf :action ReformatCode<cr>:action RearrangeCode<cr>:action OptimizeImports<cr>
+map <leader>ri :action Inline<cr>
+map <leader>rs :action ChangeSignature<cr>
+map <leader>ra :action AnonymousToInner<cr>
+map <leader>rm :action Move<cr>
+
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzz nnoremap N Nzz
+

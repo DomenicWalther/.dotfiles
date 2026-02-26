@@ -1,0 +1,29 @@
+    window-rule {
+        geometry-corner-radius 2 // Set every window radius to 20
+        clip-to-geometry true
+    }
+
+    window-rule {
+	match app-id=r#"firefox$"# title=r#"Bitwarden"# 
+	open-floating true
+    }
+
+    window-rule {
+	match app-id=r#"^(vesktop|spotify|Todoist|eu\.betterbird\.Betterbird|com.obsproject.Studio|com.chatterino.chatterino)$"#
+	open-on-output "HDMI-A-1"
+
+    }
+
+    layer-rule {
+        match namespace="^noctalia-wallpaper*"
+        place-within-backdrop true
+    }
+
+    screenshot-path null
+
+    window-rule {
+	match app-id=r#"^com\.gabm\.satty$"#
+	open-floating true
+	min-width 730
+	min-height 300
+    }

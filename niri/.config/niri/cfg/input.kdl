@@ -1,0 +1,18 @@
+// ────────────── Input Configuration ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+
+input {
+    keyboard {
+        xkb {
+            layout "de" // Use the American keyboard layout
+        }
+        numlock // Enable numlock on startup
+    }
+
+    mouse {
+	accel-profile "flat"
+	scroll-factor 2.0
+    }
+
+
+}

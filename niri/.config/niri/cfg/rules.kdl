@@ -1,6 +1,10 @@
     window-rule {
         geometry-corner-radius 2 // Set every window radius to 20
         clip-to-geometry true
+        background-effect {
+          blur true
+          noise 0.05
+        }
     }
 
     window-rule {
@@ -27,3 +31,10 @@
 	min-width 730
 	min-height 300
     }
+
+
+
+blur {
+  passes 2 
+  offset 3.0
+}

@@ -1,0 +1,327 @@
+{
+  "biome.suggestInstallingGlobally": false,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+    "scss": "css",
+  },
+  "tailwindCSS.suggestions": true,
+  "editor.quickSuggestions": {
+    "strings": "on",
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "breadcrumbs.enabled": false,
+  "window.customTitleBarVisibility": "never",
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ],
+      "silent": true,
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ],
+    },
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "h"
+      ],
+      "commands": [
+        ":nohl"
+      ],
+    },
+    {
+      "before": [
+        "c-d"
+      ],
+      "after": [
+        "c-d",
+        "z",
+        "z"
+      ],
+    },
+    {
+      "before": [
+        "c-u"
+      ],
+      "after": [
+        "c-u",
+        "z",
+        "z"
+      ],
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z"
+      ],
+    },
+    {
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.splitEditorRight"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "after": [
+        ":",
+        "%",
+        "s",
+        "/",
+        "\\",
+        "<",
+        "<C-r>",
+        "<C-w>",
+        "\\",
+        ">",
+        "/",
+        "/",
+        "g",
+        "I",
+        "<Left>",
+        "<Left>",
+        "<Left>",
+      ],
+    },
+    {
+      "before": [
+        "S-h"
+      ],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ],
+    },
+    {
+      "before": [
+        "S-l"
+      ],
+      "commands": [
+        "workbench.action.navigateRight"
+      ],
+    },
+    {
+      "before": [
+        "g",
+        "D"
+      ],
+      "commands": [
+        "editor.action.revealDefinitionAside"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        ";"
+      ],
+      "after": [
+        "A",
+        ";",
+        "<Esc>"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        ","
+      ],
+      "after": [
+        "A",
+        ",",
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        ":w"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "i",
+        "n",
+        "("
+      ],
+      "after": [
+        "/",
+        "(",
+        "<CR>",
+        "c",
+        "i",
+        "("
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "i",
+        "n",
+        "{"
+      ],
+      "after": [
+        "/",
+        "{",
+        "<CR>",
+        "c",
+        "i",
+        "{"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "i",
+        "n",
+        "["
+      ],
+      "after": [
+        "/",
+        "[",
+        "<CR>",
+        "c",
+        "i",
+        "["
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "i",
+        "n",
+        "\""
+      ],
+      "after": [
+        "/",
+        "\"",
+        "<CR>",
+        "c",
+        "i",
+        "\""
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "c"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ],
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-s>": false,
+    "<C-p>": false,
+    "<C-b>": false,
+    "<C-n>": false,
+  },
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#a8b7ff",
+  },
+  "vim.showMarksInGutter": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+  "workbench.colorTheme": "SynthWave '84",
+  "explorer.confirmDelete": false,
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "vscode_custom_css.imports": [
+    "file:///c%3A/Users/Domenic/.vscode/extensions/30d98f9b2.neovide-cursor-1.0.1/neovide-cursor.js",
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.find.seedSearchStringFromSelection": "always",
+  "go.toolsManagement.autoUpdate": true,
+}

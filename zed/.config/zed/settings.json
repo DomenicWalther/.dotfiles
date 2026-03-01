@@ -7,6 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "favorite_models": [],
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o",
+      "enable_thinking": false
+    },
+    "model_parameters": []
+  },
+  "edit_predictions": {
+    "provider": "zed"
+  },
   "icon_theme": "Catppuccin Frappé",
   "terminal": {
     "font_family": "Geist Mono",

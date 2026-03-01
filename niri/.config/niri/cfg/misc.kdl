@@ -8,6 +8,9 @@
         XDG_SESSION_TYPE "wayland"
         XDG_CURRENT_DESKTOP "niri"
         QT_QPA_PLATFORMTHEME "gtk3"
+        GTK_IM_MODULE "ibus"
+        QT_IM_MODULE "ibus"
+        XMODIFIERS "@im=ibus"
     }
 
     debug {

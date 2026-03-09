@@ -33,11 +33,19 @@ map <leader>rc :action IntroduceConstant<cr>
 map <leader>rf :action IntroduceField<cr>
 map <leader>rp :action IntroduceParameter<cr>
 map <leader>rx :action ExtractMethod<cr>
-map <leader>rf :action ReformatCode<cr>:action RearrangeCode<cr>:action OptimizeImports<cr>
+map <leader>rF :action ReformatCode<cr>:action RearrangeCode<cr>:action OptimizeImports<cr>
 map <leader>ri :action Inline<cr>
 map <leader>rs :action ChangeSignature<cr>
 map <leader>ra :action AnonymousToInner<cr>
 map <leader>rm :action Move<cr>
+
+
+" File/Search Navigation
+map <leader><leader> :action SearchEverywhere<CR>
+map <leader>ff :action GotoFile<CR>
+map <leader>fg :action FindInPath<CR>
+map <leader>fr :action RecentFiles<CR>
+map <leader>fs :action GotoSymbol<CR>
 
 
 nnoremap <C-d> <C-d>zz
@@ -45,8 +53,14 @@ nnoremap <C-u> <C-u>zz
 nnoremap n nzz
 nnoremap N Nzz
 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 # Plugin Settings ===============0
 
 set easymotion
 set commentary
+set sneak
+set highlightedyank
